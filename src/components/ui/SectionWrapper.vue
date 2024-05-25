@@ -1,18 +1,24 @@
 <script setup lang="ts">
-interface Props {
-  className?: string
-  gridTemplateColumns?: string
-}
-
-defineProps<Props>()
+const props = defineProps({
+  center: {
+    type: [Boolean, String],
+    default: true
+  },
+  gap: {
+    type: String,
+    default: '4'
+  }
+})
 </script>
 
 <template>
   <section
     :class="{
-      'grid justify-items-center gap-4': !gridTemplateColumns,
-      gridTemplateColumns: gridTemplateColumns,
-      className: className
+      grid: true,
+      'items-center justify-center': props.center === true,
+      'items-start justify-start': props.center === 'horizontal',
+      'items-end justify-end': props.center === 'vertical',
+      [`gap-${props.gap}`]: props.gap
     }"
   >
     <slot />
