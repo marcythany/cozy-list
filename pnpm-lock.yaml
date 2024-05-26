@@ -17,9 +17,9 @@ importers:
       vue:
         specifier: ^3.4.21
         version: 3.4.27(typescript@5.4.5)
-      vue-clerk:
-        specifier: ^0.3.7
-        version: 0.3.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue@3.4.27(typescript@5.4.5))
+      vue-router:
+        specifier: '4'
+        version: 4.3.2(vue@3.4.27(typescript@5.4.5))
     devDependencies:
       '@rushstack/eslint-patch':
         specifier: ^1.8.0
@@ -72,6 +72,9 @@ importers:
       vite:
         specifier: ^5.2.8
         version: 5.2.11(@types/node@20.12.12)
+      vue-clerk:
+        specifier: ^0.3.7
+        version: 0.3.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vue@3.4.27(typescript@5.4.5))
       vue-tsc:
         specifier: ^2.0.11
         version: 2.0.19(typescript@5.4.5)
@@ -1825,6 +1828,11 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
+  vue-router@4.3.2:
+    resolution: {integrity: sha512-hKQJ1vDAZ5LVkKEnHhmm1f9pMiWIBNGF5AwU67PdH7TyXCj/a4hTccuUuYCAMgJK6rO/NVYtQIEN3yL8CECa7Q==}
+    peerDependencies:
+      vue: ^3.2.0
+
   vue-template-compiler@2.7.16:
     resolution: {integrity: sha512-AYbUWAJHLGGQM7+cNTELw+KsOG9nl2CnSv467WobS5Cv9uk3wFcnr1Etsz2sEIHEZvw1U+o9mRlEO6QbZvUPGQ==}
 
@@ -3553,6 +3561,11 @@ snapshots:
       semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
+
+  vue-router@4.3.2(vue@3.4.27(typescript@5.4.5)):
+    dependencies:
+      '@vue/devtools-api': 6.6.1
+      vue: 3.4.27(typescript@5.4.5)
 
   vue-template-compiler@2.7.16:
     dependencies:

@@ -3,5 +3,10 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-900 text-gray-50;
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+.cl-internal-1nht2s4 {
+  @apply text-gray-50;
 }
