@@ -1,39 +1,20 @@
-# cozy-list
+# Cozy List - A Vue.js To-Do List App
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a to-do list application built with Vue.js 3 to provide a modern and efficient user experience. This is my learning ground for Vue.js 3, for learn the basic and fundamentals of it.
 
-## Recommended IDE Setup
+## Technologies Used
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Frontend:**
+  - Vue 3
+  - Vite
+  - TypeScript
+  - Tailwind CSS
+- **State Management:**
+  - Pinia
+- **Optional:**
+  - Axios
+  - Vue Clerk
+- **Routing:**
+  - Vue Router
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+**This project utilizes a modern development stack for a streamlined workflow and a focus on Vue.js 3 fundamentals.**
